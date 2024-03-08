@@ -1,0 +1,571 @@
+Attribute Information:
+
+Table of abbreviations
+FC is the functional class of angina pectoris in the last year according to Campeau, L., 1976. Grading of angina pectoris. Circulation, 54(3), pp.522-523.
+CHD is coronary heart disease.
+HF is heart failure.
+ECG is electrocardiogram.
+AV is atrioventricular block.
+LBBB is left bundle branch block.
+RBBB is right bundle branch block.
+QRS is QRS complex in ECG
+IU is international unit.
+ICU is intensive care unit.
+ESR is erythrocyte sedimentation rate.
+NSAID is non-steroidal anti-inflammatory drugs.
+
+List of attributes
+1. Age (AGE): Age of patient.
+
+2. Gender (SEX): :
+Cases Fraction
+0: female
+1: male
+
+3. Quantity of myocardial infarctions in the anamnesis (INF_ANAM):
+Cases Fraction
+0: zero
+1: one
+2: two
+3: three and more
+
+4. Exertional angina pectoris in the anamnesis (STENOK_AN): 
+Cases Fraction
+0: never 
+1: during the last year
+2: one year ago 
+3: two years ago 
+4: three years ago 
+5: 4-5 years ago 
+6: more than 5 years ago 
+
+5. Functional class (FC) of angina pectoris in the last year (FK_STENOK):   
+Cases Fraction
+0: there is no angina pectoris 
+1: I FC 
+2: II FC 
+3: III FC
+4: IV FC 
+
+6. Coronary heart disease (CHD) in recent weeks, days before admission to hospital (IBS_POST):   
+Cases Fraction
+0: there was no Ð¡HD 
+1: exertional angina pectoris 
+2: unstable angina pectoris 
+
+7. Presence of an essential hypertension (GB):   
+Cases Fraction
+0: there is no essential hypertension 
+1: Stage 1 
+2: Stage 2 
+3: Stage 3 
+
+8. Symptomatic hypertension (SIM_GIPERT):  
+Cases Fraction
+0: no 
+1: yes 
+
+9. Duration of arterial hypertension (DLIT_AG):   
+Cases Fraction
+0: there was no arterial hypertension 
+1: one year 93 
+2: two years 58 
+3: three years 
+4: four years 
+5: five years 
+6: 6-10 years 
+7: more than 10 years 
+
+10. Presence of chronic Heart failure (HF) in the anamnesis (ZSN_A): Partially ordered attribute: there are two lines of severities:
+0<1<2<4,
+0<1<3<4.
+State 4 means simultaneous states 2 and 3
+Cases Fraction
+0: there is no chronic heart failure 
+1: I stage 
+2: IIÐ stage (heart failure due to right ventricular systolic dysfunction)
+3: IIÐ stage (heart failure due to left ventricular systolic dysfunction)
+4: IIB stage (heart failure due to left and right ventricular systolic dysfunction) 
+
+11. Observing of arrhythmia in the anamnesis (nr11):  
+Cases Fraction
+0: no 
+1: yes
+
+12. Premature atrial contractions in the anamnesis (nr01):  
+Cases Fraction
+0: no 
+1: yes 
+
+13. Premature ventricular contractions in the anamnesis (nr02):  
+Cases Fraction
+0: no 
+1: yes 
+
+14. Paroxysms of atrial fibrillation in the anamnesis (nr03):  
+Cases Fraction
+0: no 
+1: yes 
+
+15. A persistent form of atrial fibrillation in the anamnesis (nr04):  
+Cases Fraction
+0: no 
+1: yes 
+
+16. Ventricular fibrillation in the anamnesis (nr07):  
+Cases Fraction
+0: no 
+1: yes 
+
+17. Ventricular paroxysmal tachycardia in the anamnesis (nr08):  
+Cases Fraction
+0: no 
+1: yes 
+
+18. First-degree AV block in the anamnesis (np01): 
+Cases Fraction
+0: no 
+1: yes 
+
+19. Third-degree AV block in the anamnesis (np04): 
+Cases Fraction
+0: no
+1: yes 
+
+20. LBBB (anterior branch) in the anamnesis (np05): 
+Cases Fraction
+0: no 
+1: yes
+
+21. Incomplete LBBB in the anamnesis (np07): 
+Cases Fraction
+0: no 
+1: yes 
+
+22. Complete LBBB in the anamnesis (np08): 
+Cases Fraction
+0: no 
+1: yes 
+
+23. Incomplete RBBB in the anamnesis (np09): 
+Cases Fraction
+0: no 
+1: yes 
+
+24. Complete RBBB in the anamnesis (np10): 
+Cases Fraction
+0: no 
+1: yes 
+
+25. Diabetes mellitus in the anamnesis (endocr_01): 
+Cases Fraction
+0: no 
+1: yes 
+
+26. Obesity in the anamnesis (endocr_02): 
+Cases Fraction
+0: no 
+1: yes 
+
+27. Thyrotoxicosis in the anamnesis (endocr_03): 
+Cases Fraction
+0: no 
+1: yes 
+
+28. Chronic bronchitis in the anamnesis (zab_leg_01): 
+Cases Fraction
+0: no 
+1: yes 
+
+29.Obstructive chronic bronchitis in the anamnesis (zab_leg_02): 
+Cases Fraction
+0: no 
+1: yes 
+
+30. Bronchial asthma in the anamnesis (zab_leg_03): 
+Cases Fraction
+0: no 
+1: yes 
+
+31. Chronic pneumonia in the anamnesis (zab_leg_04): 
+Cases Fraction
+0: no 
+1: yes 
+
+32. Pulmonary tuberculosis in the anamnesis (zab_leg_06): 
+Cases Fraction
+0: no 
+1: yes 
+
+33. Systolic blood pressure according to intensive care unit (S_AD_ORIT) (mmHg)
+
+34. Diastolic blood pressure according to intensive care unit (D_AD_ORIT) (mmHg)
+
+35. Pulmonary edema at the time of admission to intensive care unit (O_L_POST): 
+Cases Fraction
+0: no 
+1: yes 
+
+36. Cardiogenic shock at the time of admission to intensive care unit (K_SH_POST): 
+Cases Fraction
+0: no 
+1: yes
+
+37. Paroxysms of atrial fibrillation at the time of admission to intensive care unit, (or at a pre-hospital stage) (MP_TP_POST): 
+Cases Fraction
+0: no 
+1: yes 
+
+38. Paroxysms of supraventricular tachycardia at the time of admission to intensive care unit, (or at a pre-hospital stage) (SVT_POST): 
+Cases Fraction
+0: no 
+1: yes 
+
+39. Paroxysms of ventricular tachycardia at the time of admission to intensive care unit, (or at a pre-hospital stage) (GT_POST): 
+Cases Fraction
+0: no 
+1: yes
+
+40. Ventricular fibrillation at the time of admission to intensive care unit, (or at a pre-hospital stage) (FIB_G_POST): 
+Cases Fraction
+0: no 
+1: yes 
+
+41. Presence of an anterior myocardial infarction (left ventricular) (ECG changes in leads V1: V4 ) (ant_im): 
+Cases Fraction
+0: there is no infarct in this location 
+1: QRS has no changes 392 
+2: QRS is like QR-complex 
+3: QRS is like Qr-complex 
+4: QRS is like QS-complex 
+
+42. Presence of a lateral myocardial infarction (left ventricular) (ECG changes in leads V5: V6 , I, AVL) (lat_im): 
+Cases Fraction
+0: there is no infarct in this location 
+1: QRS has no changes 2: QRS is like QR-complex 
+3: QRS is like Qr-complex 
+4: QRS is like QS-complex 
+
+43. Presence of an inferior myocardial infarction (left ventricular) (ECG changes in leads III, AVF, II). (inf_im): 
+Cases Fraction
+0: there is no infarct in this location 
+1: QRS has no changes
+2: QRS is like QR-complex 
+3: QRS is like Qr-complex 
+4: QRS is like QS-complex 
+
+44. Presence of a posterior myocardial infarction (left ventricular) (ECG changes in V7: V9, reciprocity changes in leads V1 â€“ V3) (post_im): 
+Cases Fraction
+0: there is no infarct in this location
+1: QRS has no changes
+2: QRS is like QR-complex 
+3: QRS is like Qr-complex 
+4: QRS is like QS-complex 
+
+45. Presence of a right ventricular myocardial infarction (IM_PG_P): 
+Cases Fraction
+0: no 
+1: yes 
+
+46. ECG rhythm at the time of admission to hospital: sinus (with a heart rate 60-90) (ritm_ecg_p_01): 
+Cases Fraction
+0: no 
+1: yes 
+
+47. ECG rhythm at the time of admission to hospital: atrial fibrillation (ritm_ecg_p_02): 
+Cases Fraction
+0: no 
+1: yes 
+
+48. ECG rhythm at the time of admission to hospital: atrial (ritm_ecg_p_04): 
+Cases Fraction
+0: no 
+1: yes 
+
+49. ECG rhythm at the time of admission to hospital: idioventricular (ritm_ecg_p_06): 
+Cases Fraction
+0: no 
+1: yes 
+
+50. ECG rhythm at the time of admission to hospital: sinus with a heart rate above 90 (tachycardia) (ritm_ecg_p_07): 
+Cases Fraction
+0: no
+1: yes 
+
+51. ECG rhythm at the time of admission to hospital: sinus with a heart rate below 60 (bradycardia) (ritm_ecg_p_08): 
+Cases Fraction
+0: no 
+1: yes 
+
+52. Premature atrial contractions on ECG at the time of admission to hospital (n_r_ecg_p_01): 
+Cases Fraction
+0: no 
+1: yes 
+
+53. Frequent premature atrial contractions on ECG at the time of admission to hospital (n_r_ecg_p_02): 
+Cases Fraction
+0: no 
+1: yes 
+
+54.Premature ventricular contractions on ECG at the time of admission to hospital (n_r_ecg_p_03): 
+Cases Fraction
+0: no 
+1: yes 
+
+55. Frequent premature ventricular contractions on ECG at the time of admission to hospital (n_r_ecg_p_04): 
+Cases Fraction
+0: no 
+1: yes 
+
+56. Paroxysms of atrial fibrillation on ECG at the time of admission to hospital (n_r_ecg_p_05): 
+Cases Fraction
+0: no 
+1: yes 
+
+57. Persistent form of atrial fibrillation on ECG at the time of admission to hospital (n_r_ecg_p_06): 
+Cases Fraction
+0: no 
+1: yes 
+
+58. Paroxysms of supraventricular tachycardia on ECG at the time of admission to hospital (n_r_ecg_p_08): 
+Cases Fraction
+0: no 
+1: yes 
+
+59. Paroxysms of ventricular tachycardia on ECG at the time of admission to hospital (n_r_ecg_p_09): 
+Cases Fraction
+0: no 
+1: yes 
+
+60. Ventricular fibrillation on ECG at the time of admission to hospital (n_r_ecg_p_10): 
+Cases Fraction
+0: no 
+1: yes 
+
+61. Sinoatrial block on ECG at the time of admission to hospital (n_p_ecg_p_01): 
+Cases Fraction
+0: no 
+1: yes 
+
+62. First-degree AV block on ECG at the time of admission to hospital (n_p_ecg_p_03): 
+Cases Fraction
+0: no 
+1: yes 
+
+63. Type 1 Second-degree AV block (Mobitz I/Wenckebach) on ECG at the time of admission to hospital (n_p_ecg_p_04): 
+Cases Fraction
+0: no 
+1: yes 
+
+64. Type 2 Second-degree AV block (Mobitz II/Hay) on ECG at the time of admission to hospital (n_p_ecg_p_05): 
+Cases Fraction
+0: no 
+1: yes 
+
+65. Third-degree AV block on ECG at the time of admission to hospital (n_p_ecg_p_06): 
+Cases Fraction
+0: no 
+1: yes 
+
+66. LBBB (anterior branch) on ECG at the time of admission to hospital (n_p_ecg_p_07): 
+Cases Fraction
+0: no 
+1: yes 
+
+67. LBBB (posterior branch) on ECG at the time of admission to hospital (n_p_ecg_p_08): 
+Cases Fraction
+0: no 
+1: yes 
+
+68. Incomplete LBBB on ECG at the time of admission to hospital (n_p_ecg_p_09): 
+Cases Fraction
+0: no 
+1: yes 
+
+69. Complete LBBB on ECG at the time of admission to hospital (n_p_ecg_p_10): 
+Cases Fraction
+0: no 
+1: yes 
+
+70. Incomplete RBBB on ECG at the time of admission to hospital (n_p_ecg_p_11): 
+Cases Fraction
+0: no 
+1: yes 
+
+71. Complete RBBB on ECG at the time of admission to hospital (n_p_ecg_p_12):
+Cases Fraction
+0: no 
+1: yes 
+
+72. Fibrinolytic therapy by Ð¡Ðµliasum 750k IU (fibr_ter_01): 
+Cases Fraction
+0: no 
+1: yes 
+
+73. Fibrinolytic therapy by Ð¡Ðµliasum 1m IU (fibr_ter_02): 
+Cases Fraction
+0: no 
+1: yes 
+
+74. Fibrinolytic therapy by Ð¡Ðµliasum 3m IU (fibr_ter_03): 
+Cases Fraction
+0: no 
+1: yes 
+
+75. Fibrinolytic therapy by Streptase (fibr_ter_05): 
+Cases Fraction
+0: no 
+1: yes 
+
+76. Fibrinolytic therapy by Ð¡Ðµliasum 500k IU (fibr_ter_06): 
+Cases Fraction
+0: no 
+1: yes 
+
+77. Fibrinolytic therapy by Ð¡Ðµliasum 250k IU (fibr_ter_07): 
+Cases Fraction
+0: no 
+1: yes
+
+78. Fibrinolytic therapy by Streptodecase 1.5m IU (fibr_ter_08): 
+Cases Fraction
+0: no 
+1: yes 
+
+79. Hypokalemia ( < 4 mmol/L) (GIPO_K): 
+Cases Fraction
+0: no 
+1: yes 
+
+80. Serum potassium content (K_BLOOD) (mmol/L)
+
+81. Increase of sodium in serum (more than 150 mmol/L) (GIPER_Na): 
+Cases Fraction
+0: no 
+1: yes 
+
+82. Serum sodium content (Na_BLOOD) (mmol/L)
+
+83. Serum AlAT content (ALT_BLOOD) (IU/L)
+
+84. Serum AsAT content (AST_BLOOD) (IU/L)
+
+85. White blood cell count (billions per liter) (L_BLOOD)
+
+86. ESR (Erythrocyte sedimentation rate) (ROE)
+
+87. Time elapsed from the beginning of the attack of CHD to the hospital (TIME_B_S):
+Cases Fraction
+1: less than 2 hours 
+2: 2-4 hours 
+3: 4-6 hours 
+4: 6-8 hours 
+5: 8-12 hours 
+6: 12-24 hours 
+7: more than 1 days 
+8: more than 2 days 
+9: more than 3 days 
+
+88. Relapse of the pain in the first hours of the hospital period (R_AB_1_n): 
+Cases Fraction
+0: there is no relapse 
+1: only one 
+2: 2 times
+3: 3 or more times
+
+89. Relapse of the pain in the second day of the hospital period (R_AB_2_n): 
+Cases Fraction
+0: there is no relapse 
+1: only one
+2: 2 times
+3: 3 or more times 
+
+90. Relapse of the pain in the third day of the hospital period (R_AB_3_n):
+Cases Fraction
+0: there is no relapse 
+1: only one 
+2: 2 times
+3: 3 or more times
+
+91. Use of liquid nitrates in the ICU (NITR_S):
+Cases Fraction
+0: no 
+1: yes
+
+92. Use of opioid drugs in the ICU in the first hours of the hospital period (NA_R_1_n):
+Cases Fraction
+0: no
+1: once
+2: twice
+3: three times
+4: four times
+
+93. Use of opioid drugs in the ICU in the second day of the hospital period (NA_R_2_n):    
+Cases Fraction
+0: no 
+1: once 
+2: twice 
+3: three times 
+
+94. Use of opioid drugs in the ICU in the third day of the hospital period (NA_R_3_n):    
+Cases Fraction
+0: no 
+1: once 
+2: twice 
+
+95. Use of NSAIDs in the ICU in the first hours of the hospital period (NOT_NA_1_n):    
+Cases Fraction
+0: no 
+1: once 
+2: twice 
+3: three times 
+4: four or more times
+
+96. Use of NSAIDs in the ICU in the second day of the hospital period (NOT_NA_2_n):    
+Cases Fraction
+0: no 
+1: once 
+2: twice 
+3: three times
+
+97. Use of NSAIDs in the ICU in the third day of the hospital period (NOT_NA_3_n):    
+Cases Fraction
+0: no 
+1: once 
+2: twice 
+
+98. Use of lidocaine in the ICU (LID_S_n):    
+Cases Fraction
+0: no 
+1: yes 
+
+99. Use of beta-blockers in the ICU (B_BLOK_S_n):    
+Cases Fraction
+0: no 
+1: yes 
+
+100. Use of calcium channel blockers in the ICU (ANT_CA_S_n):    
+Cases Fraction
+0: no 
+1: yes 
+
+101. Use of Ð° anticoagulants (heparin) in the ICU (GEPAR_S_n):    
+Cases Fraction
+0: no 
+1: yes 
+
+102. Use of acetylsalicylic acid in the ICU (ASP_S_n):    
+Cases Fraction
+0: no 
+1: yes 
+
+103. Use of Ticlid in the ICU (TIKL_S_n):    
+Cases Fraction
+0: no 
+1: yes 
+
+104. Use of Trental in the ICU (TRENT_S_n):    
+Cases Fraction
+0: no 
+1: yes
+
